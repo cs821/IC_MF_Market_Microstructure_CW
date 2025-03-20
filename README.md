@@ -7,19 +7,29 @@ This paper replicates the analysis of microstructural hedging errors arising fro
 
 ## Contributor
 
-Zhenyi Chen   (CID: 06011402)
-Yi Qu (CID:06001389)
+Zhenyi Chen   (CID: 06011402)\\
+Yi Qu (CID:06001389)\\
 Chengdong Song (CID: 02030540)
 
 ## Structure
 
-IC_MF_Market_Microstructure_CW/
-│── early_version/                      # Previous versions of the project, just ignore them
-│── README.md                           # Project documentation
-│── hedging_error_GBM_params.ipynb      # Parameter Analysis for Hedging error (under GBM)
-│── hedging_error_SABR_Bartlett_Delta.ipynb      # Hedging error of SABR model with Bartlett Delta
-│── hedging_error_SABR_Bartlett_Delta_asym_eta.ipynb  # Asymmetric bid-ask variation for SABR Bartlett Delta Delta
-│── hedging_error_SABR_Delta_NEW.ipynb  # Hedging error for SABR model Using Classic Delta
-│── hedging_error_SABR_Delta_NEW_asym_eta.ipynb  # Asymmetric eta in SABR model 
-│── hedging_error_vision3.ipynb         # Replicated hedging error analysis
-│── hedging_error_vision3_asym_eta.ipynb  #  hedging error analysis with asymmetric eta
+```hedging_error_GBM_params.ipynb```
+This notebook analyzes the influence of parameters of hedging errors under the Geometric Brownian Motion (GBM) model. It examines how parameter choices influence hedging performance and explores error distributions.
+
+```hedging_error_SABR_Bartlett_Delta.ipynb```
+Implements SABR model hedging using Bartlett Delta. It investigates how the volatility dynamics impact hedging efficiency and error behavior.
+
+```hedging_error_SABR_Bartlett_Delta_asym_eta.ipynb```
+Extends the SABR Bartlett Delta model by introducing asymmetric bid-ask spreads, where the upper and lower thresholds differ, reflecting real-world market imbalances.
+
+```hedging_error_SABR_Delta_NEW.ipynb```
+An extention to the Hedging error of SABR model using classic Delta.
+
+```hedging_error_SABR_Delta_NEW_asym_eta.ipynb```
+Further extends the SABR model by incorporating asymmetric bid-ask dynamics into the updated hedging framework.
+
+```hedging_error_vision3.ipynb```
+Implement the Hedging Error Analysis in the original paper, reproducing a similar result.
+
+```hedging_error_vision3_asym_eta.ipynb```
+A variation of ```hedging_error_vision3.ipynb``` incorporating asymmetric bid-ask spreads, allowing for a more realistic assessment of market liquidity effects on hedging performance.
