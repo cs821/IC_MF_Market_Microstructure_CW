@@ -7,8 +7,8 @@ This paper replicates the analysis of microstructural hedging errors arising fro
 
 ## Contributor
 
-Zhenyi Chen   (CID: 06011402)\\
-Yi Qu (CID:06001389)\\
+Zhenyi Chen   (CID: 06011402)\
+Yi Qu (CID:06001389)\
 Chengdong Song (CID: 02030540)
 
 ## Structure
